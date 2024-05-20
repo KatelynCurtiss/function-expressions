@@ -59,15 +59,14 @@ console.log(showBiography(firstName, lastName, age));
 
 
 // Rewritten as a function expression
-const userData = "fName, lName, userAge";
-console.log( showBiography(userData)) {
-    // Build a template string containing the user's full name and age
-    return `Hello! My name is ${fName} ${lName} and I am ${userAge} years old.`;
-}
-// Call the showBiography function and display the info
-// about the user in the browser console
-const firstName = "Katelyn";
-const lastName = "Curtiss";
-const age = "17";
-console.log(showBiography(firstName, lastName, age));
+expression
+const showBiography = function(fName, lName, userAge) {
+         // Build a template string containing the user's full name and age
+        return `Hello! My name is ${fName} ${lName} and I am ${userAge} years old.`;
+}; // Note the semicolon after the closing curly brace when using a function expression
+
+const firstName = 'Katelyn';
+const lastName = 'Curtiss';
+const myAge = 18;
+console.log( showBiography(firstName, lastName, myAge));
 
